@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="BCWeatherHelperGUI">
+  <grid id="27dc6" binding="MainForm" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="867" height="486"/>
+    </constraints>
+    <properties>
+      <background color="-5719364"/>
+      <foreground color="-4935760"/>
+      <inheritsPopupMenu value="true"/>
+      <minimumSize width="500" height="333"/>
+      <opaque value="false"/>
+      <preferredSize width="805" height="900"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="ea820" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="26" style="3"/>
+          <text value="BCWeatherHelper V1.0 - Mars W."/>
+        </properties>
+      </component>
+      <tabbedpane id="b6a0" binding="tabbedPane1" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="20" style="1"/>
+        </properties>
+        <border type="etched"/>
+        <children>
+          <grid id="55e85" layout-manager="GridLayoutManager" row-count="7" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Current Conditions"/>
+            </constraints>
+            <properties>
+              <background color="-5719364"/>
+              <enabled value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="6a0b4" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <text value="Date:"/>
+                </properties>
+              </component>
+              <component id="fc094" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <text value="Last update:"/>
+                </properties>
+              </component>
+              <component id="3a507" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <text value="Temperature:"/>
+                </properties>
+              </component>
+              <component id="abea7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <text value="Wind speed:"/>
+                </properties>
+              </component>
+              <component id="b7342" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <text value="Weather:"/>
+                </properties>
+              </component>
+              <component id="92214" class="javax.swing.JTextField" binding="weather">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font size="16"/>
+                </properties>
+              </component>
+              <component id="31b12" class="javax.swing.JTextField" binding="temp">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font size="16"/>
+                </properties>
+              </component>
+              <component id="af9a3" class="javax.swing.JTextField" binding="windSpeed">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font size="16"/>
+                </properties>
+              </component>
+              <component id="be3a7" class="javax.swing.JTextField" binding="lastUpdate">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font size="16"/>
+                </properties>
+              </component>
+              <component id="deb3d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <text value="Location:"/>
+                </properties>
+              </component>
+              <component id="fdaca" class="javax.swing.JComboBox" binding="location">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font size="16"/>
+                </properties>
+              </component>
+              <component id="a4e98" class="javax.swing.JLabel" binding="time">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <text value="time"/>
+                </properties>
+              </component>
+              <component id="1de9f" class="javax.swing.JLabel" binding="weatherIcon">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="e4037" class="javax.swing.JButton" binding="updateButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Update"/>
+                </properties>
+              </component>
+              <component id="3f3a0" class="javax.swing.JLabel" binding="butterflies1">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="b5330" layout-manager="GridLayoutManager" row-count="6" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Forecast to Phone"/>
+            </constraints>
+            <properties>
+              <background color="-5719364"/>
+              <font size="16" style="1"/>
+            </properties>
+            <border type="none" title="">
+              <font size="18" style="1"/>
+            </border>
+            <children>
+              <component id="48064" class="javax.swing.JButton" binding="sendNext24HrButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="296" height="44"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="16" style="1"/>
+                  <text value="Send next 24-hr forecast to phone"/>
+                </properties>
+              </component>
+              <component id="f9e67" class="javax.swing.JLabel" binding="fromTemp">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                  <text value="From:"/>
+                </properties>
+              </component>
+              <component id="29d87" class="javax.swing.JComboBox" binding="fromTempCBox">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                </properties>
+              </component>
+              <component id="5f73a" class="javax.swing.JCheckBox" binding="rainCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="1" column="3" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="67" height="41"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-5719364"/>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                  <text value="Rain"/>
+                </properties>
+              </component>
+              <component id="db567" class="javax.swing.JCheckBox" binding="snowCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="1" column="4" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="90" height="41"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-5719364"/>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                  <text value="Snow"/>
+                </properties>
+              </component>
+              <component id="38e78" class="javax.swing.JCheckBox" binding="fogCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="1" column="5" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="105" height="41"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-5719364"/>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                  <text value="Fog"/>
+                </properties>
+              </component>
+              <component id="553bf" class="javax.swing.JLabel" binding="toTemp">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="67" height="22"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                  <text value="To:"/>
+                </properties>
+              </component>
+              <component id="1e972" class="javax.swing.JComboBox" binding="toTempCBox">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                </properties>
+              </component>
+              <component id="8cd5e" class="javax.swing.JCheckBox" binding="smokeCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="20" height="32"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-5719364"/>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                  <text value="Smoke"/>
+                </properties>
+              </component>
+              <component id="52ae3" class="javax.swing.JCheckBox" binding="clearCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="20" height="32"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-5719364"/>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                  <text value="Clear"/>
+                </properties>
+              </component>
+              <component id="b3f2f" class="javax.swing.JCheckBox" binding="cloudsCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="105" height="32"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-5719364"/>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                  <text value="Clouds"/>
+                </properties>
+              </component>
+              <component id="75eee" class="javax.swing.JCheckBox" binding="drizzleCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="1" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="90" height="41"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-5719364"/>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                  <text value="Drizzle"/>
+                </properties>
+              </component>
+              <component id="529f3" class="javax.swing.JCheckBox" binding="thunderstormCheckBox">
+                <constraints>
+                  <grid row="1" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="90" height="41"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-5719364"/>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                  <text value="Thunderstorm"/>
+                </properties>
+              </component>
+              <component id="de3c0" class="javax.swing.JCheckBox" binding="onlyIncludeCheckBox">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-5719364"/>
+                  <enabled value="true"/>
+                  <font size="16" style="1"/>
+                  <text value="(2) Only include:"/>
+                </properties>
+              </component>
+              <component id="12228" class="javax.swing.JCheckBox" binding="tempRangeCheckBox">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-5719364"/>
+                  <enabled value="true"/>
+                  <font size="16" style="1"/>
+                  <text value="(1) Include only if not in range (°C'):"/>
+                </properties>
+              </component>
+              <component id="81ce7" class="javax.swing.JCheckBox" binding="tornadoCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="20" height="32"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-5719364"/>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                  <text value="Tornado"/>
+                </properties>
+              </component>
+              <component id="a9143" class="javax.swing.JCheckBox" binding="hazeCheckBox">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="90" height="41"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-5719364"/>
+                  <enabled value="false"/>
+                  <font size="16"/>
+                  <text value="Haze"/>
+                </properties>
+              </component>
+              <component id="be82f" class="javax.swing.JCheckBox" binding="ignoreOnlyIfBothCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-5719364"/>
+                  <enabled value="false"/>
+                  <font size="16" style="1"/>
+                  <hideActionText value="true"/>
+                  <text value="Ignore only if both conditions not met"/>
+                  <toolTipText value="Or else, weather condition is prioritized over whether or not it is in ignored temp range for each forecast interval."/>
+                  <verifyInputWhenFocusTarget value="true"/>
+                </properties>
+              </component>
+              <component id="369e9" class="javax.swing.JLabel" binding="butterflies2">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
