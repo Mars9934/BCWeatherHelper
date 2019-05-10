@@ -7,8 +7,8 @@ import java.util.List;
 
 public class TextMessenger {
     private String textOut;
-    public static final String ACCOUNT_SID = "ACda6108ccb7d00f572275da620e7c3a03";
-    public static final String AUTH_TOKEN = "a6fb699731180bd991c1f3c7c2e4c08d";
+    public static final String ACCOUNT_SID = ""; // API KEY REMOVED
+    public static final String AUTH_TOKEN = ""; // API KEY REMOVED
 
     public TextMessenger() {
         textOut = "";
@@ -20,8 +20,8 @@ public class TextMessenger {
             textOut = "No reports fit criteria.";
         }
         Message message = Message.creator(
-                new com.twilio.type.PhoneNumber("+17788989939"),
-                new com.twilio.type.PhoneNumber("+17787714535"),
+                new com.twilio.type.PhoneNumber(""), // PHONE REMOVED
+                new com.twilio.type.PhoneNumber(""), // PHONE REMOVED
                 textOut)
                 .create();
 
